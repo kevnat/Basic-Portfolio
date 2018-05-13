@@ -1,52 +1,151 @@
 * {
- box-sizing: border-box;
- text-align: center;
-}
- 
-header {
- padding: 20px;
- margin-bottom: 20px; 
- color: #333;
- background:lightcoral; 
- border-color: #cccccc;
-}
-
-
-h1 {
-    font-family: 'Georgia', Times, Times New Roman, serif;
-
-}
-
-p {
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    text-decoration-color: #777777
-}
+    box-sizing: border-box;
+    text-align: left;
+   }
 
 body {
-    background-image: url("assets/css/images/use_your_illusion.png");
-    background-repeat: repeat;
-    padding: 120px;
+    background-image: url(../images/funky-lines.png)
 }
 
-footer {
-    clear:both;    
+header {
+    float: left;
     padding: 20px;
-    color: #333;
-    background: #666666;
+    width: 100%;
+    margin-bottom: 20px; 
+    background: #fff; 
+    border: 2 px solid #cccccc;
+    border-bottom: 2px solid #cccccc; 
+   }
+
+#name {
+    float: left; 
+    position: relative;
+    text-align: left;
+    box-sizing: border-box;
+    width: 960px;
+    margin: auto;
+    margin-left: 180px; 
+    padding: 10px; 
+    background-color: #4aaaa5;
+    width: 290px; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 36px;
+    color: white; 
 }
 
-#nav {
+.navigation {
+    margin-left: 270px; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    vertical-align: middle; 
+    font-size: 18px;
     float: right;
     width: 33.3%;
-    color: #fff;
-    background: #666;
+    background: #fff;
 }
 
-.banner {
+h1 {
+    color: #4aaaa5;
+}
+
+#main {
+    clear: both; 
+    padding: 15px;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 960px;
+    line-height: 25px; 
+    overflow: auto;
+    background: #fff;
+    border: 1px solid #dddddd;
+    margin: auto; 
+  }
+  
+img {
+    float: left;
+    padding: 10px; 
+    display: block; 
+}
+
+#content {
+    text-align: top; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px; 
+    text-align: top; 
+    overflow: auto;
+}
+
+#divider { 
+    top: auto; 
+    float: left;  
+    margin-top: 0;
+    width: 100%;
+    padding: 3px; 
+    background-color: #4aaaa5; 
+}
+
+.item { 
+    position: relative; 
+    float: left;
+    z-index: 1; 
+    padding-bottom: 50px;
+}
+
+.overlay {
+    margin-left: 10px; 
+    text-align: center;
+    padding: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    position: absolute; 
+    background-color: #4aaaa5; 
+    top: 200px; 
+    width: 255px;
+    z-index: 2; 
+    color: white;
+}
+
+form {
+    clear: both; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin-bottom: -15px;
+}
+
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit], select {
+    color: white; 
+    background-color: #4aaaa5;
+    padding: 12px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.footer {
+    overflow:auto;
+    margin-left: -8px;
+    margin-top:-50px;
+    bottom: 0; 
+    position: fixed;
+    clear:both;
+    width: 100%;
     padding: 20px;
-    margin-bottom: 20px; 
-    color: #333;
-    background: lightblue; 
-    border-color: #cccccc;
-
-}
+    color: white;
+    z-index: 3;
+    background: #666666;
+} 
